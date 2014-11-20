@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Transparent_FPP_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="hPt-Mi-Z8n">
+                                <rect key="frame" x="65" y="28" width="475" height="203"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JxX-RG-mq4">
+                                <rect key="frame" x="145" y="252" width="310" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="bottom" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipZ-Fr-oWu">
+                                <rect key="frame" x="0.0" y="542" width="600" height="58"/>
+                                <color key="backgroundColor" red="0.074509803921568626" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="mmZ-GA-8ob"/>
+                                </constraints>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="search:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dGg-ZY-Y7h"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter a License Plate number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIx-5u-3SE">
+                                <rect key="frame" x="145" y="223" width="310" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="License plate not found." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDh-WH-VTJ">
+                                <rect key="frame" x="145" y="289" width="310" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.010470326332124524" blue="0.020522407064054837" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.67217092803030298" green="0.0" blue="0.0067563394635608235" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="0.010302376964786641" blue="0.030407675681219604" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzt-Oj-TOG">
+                                <rect key="frame" x="147" y="366" width="310" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="ipZ-Fr-oWu" secondAttribute="centerX" id="5Do-NO-qgB"/>
+                            <constraint firstItem="hPt-Mi-Z8n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="49" id="BQs-e9-FNr"/>
+                            <constraint firstItem="Hzt-Oj-TOG" firstAttribute="centerX" secondItem="hDh-WH-VTJ" secondAttribute="centerX" id="GcT-s8-7Os"/>
+                            <constraint firstItem="hPt-Mi-Z8n" firstAttribute="centerX" secondItem="IIx-5u-3SE" secondAttribute="centerX" constant="2.5" id="KqX-yt-eI2"/>
+                            <constraint firstItem="JxX-RG-mq4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="Ljz-Z9-Bg5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ipZ-Fr-oWu" secondAttribute="bottom" id="Oev-8x-my2"/>
+                            <constraint firstItem="IIx-5u-3SE" firstAttribute="top" secondItem="hPt-Mi-Z8n" secondAttribute="bottom" constant="25" id="dVJ-7J-v2s"/>
+                            <constraint firstItem="Hzt-Oj-TOG" firstAttribute="top" secondItem="hDh-WH-VTJ" secondAttribute="bottom" constant="60" id="eKE-Ym-lfH"/>
+                            <constraint firstItem="hPt-Mi-Z8n" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="fsf-ag-Ixr"/>
+                            <constraint firstAttribute="width" secondItem="ipZ-Fr-oWu" secondAttribute="width" id="gVK-Og-kJe"/>
+                            <constraint firstItem="hDh-WH-VTJ" firstAttribute="top" secondItem="JxX-RG-mq4" secondAttribute="bottom" constant="7" id="mD4-fc-Egw"/>
+                            <constraint firstItem="hDh-WH-VTJ" firstAttribute="width" secondItem="JxX-RG-mq4" secondAttribute="width" id="qWB-5W-kot"/>
+                            <constraint firstItem="hPt-Mi-Z8n" firstAttribute="centerX" secondItem="JxX-RG-mq4" secondAttribute="centerX" constant="2.5" id="qat-3f-Bnl"/>
+                            <constraint firstItem="hDh-WH-VTJ" firstAttribute="centerX" secondItem="JxX-RG-mq4" secondAttribute="centerX" id="rCy-7i-frl"/>
+                            <constraint firstItem="JxX-RG-mq4" firstAttribute="top" secondItem="IIx-5u-3SE" secondAttribute="bottom" constant="8" id="sfI-Pa-vBU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hPt-Mi-Z8n" secondAttribute="trailing" constant="44" id="t6Q-em-yHE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="expirationMsg" destination="Hzt-Oj-TOG" id="TtR-3w-DBy"/>
+                        <outlet property="licensePlate" destination="JxX-RG-mq4" id="ZdH-ag-joM"/>
+                        <outlet property="resultsMsg" destination="hDh-WH-VTJ" id="Jax-HT-qmI"/>
+                        <outlet property="searchBtn" destination="ipZ-Fr-oWu" id="UZo-JG-GcU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Transparent_FPP_Logo" width="220" height="169"/>
+    </resources>
+</document>

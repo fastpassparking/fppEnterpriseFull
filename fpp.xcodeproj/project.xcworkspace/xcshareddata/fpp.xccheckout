@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>184F88B4-732C-434A-966D-8616B6FBA83C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>fpp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ECF88720A6FBB9727469FCF007095AF4DC1EEC51</key>
+		<string>https://github.com/fastpassparking/fppEnterprise.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>fpp/fpp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ECF88720A6FBB9727469FCF007095AF4DC1EEC51</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/fastpassparking/fppEnterprise.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ECF88720A6FBB9727469FCF007095AF4DC1EEC51</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ECF88720A6FBB9727469FCF007095AF4DC1EEC51</string>
+			<key>IDESourceControlWCCName</key>
+			<string>fppEnterprise</string>
+		</dict>
+	</array>
+</dict>
+</plist>
