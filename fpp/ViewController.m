@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ParkingPassHandler.h"
 
 @interface ViewController ()
 
@@ -18,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    resultsMsg.hidden = true;
+    resultsMsg.hidden = YES;
 
 }
 
@@ -28,33 +29,39 @@
 }
 
 - (IBAction)search:(id)sender {
-    // Variables needed to set
-    bool validPlate = false;
-    NSDate *expirationDate = [[NSDate alloc] init];
     NSDate *currentDate = [NSDate date];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    
+    formatter.dateFormat = @"M/d/yyyy hh:ss a";
     
     // Hide the error message, if not already.
-    resultsMsg.hidden = true;
+    resultsMsg.hidden = YES;
     
     // TODO : Search for plate and update info.
-    validPlate = true;
-    
-    // Show error message, if the plate cannot be found
-    resultsMsg.hidden = validPlate;
-    
-    if (currentDate > expirationDate) {
-        // Set text
-        expirationMsg.text = @"Parking pass expired at 10:42 PM.";
+    [ParkingPassHandler getParkingPassByLicensePlate:licensePlate.text withLotId:@"5677856576547" withCompletionHandler:^(BOOL success, parkingPass* returnedParkingPass) {
         
-        // Set background
-        // TODO
-    } else {
-        // Set text
-        expirationMsg.text = @"Parking pass expires at 10:42 PM.";
-        
-        // Set background
-        // TODO
-    }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            expirationMsg.text = @"";
+            
+            if(success == YES) {
+                if (returnedParkingPass)
+                {
+                    if ([currentDate compare: returnedParkingPass.endDateTime] == NSOrderedDescending) {
+                        expirationMsg.text = [NSString stringWithFormat:@"Parking pass expired at %@", [formatter stringFromDate:returnedParkingPass.endDateTime]];
+                    } else {
+                        expirationMsg.text = [NSString stringWithFormat:@"Parking pass expires at %@", [formatter stringFromDate:returnedParkingPass.endDateTime]];
+                    }
+                } else {
+                    expirationMsg.text = @"No parking passes found.";
+                }
+                
+            } else {
+                    resultsMsg.hidden = NO;
+            }
+        });
+    }];
+    
+
 }
 
 

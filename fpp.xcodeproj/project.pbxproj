@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F3CA85A1A1E4562000B8240 /* httpRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3CA8571A1E4562000B8240 /* httpRequestHandler.m */; };
+		3F3CA85B1A1E4562000B8240 /* ParkingPassHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3CA8591A1E4562000B8240 /* ParkingPassHandler.m */; };
+		3F3CA85E1A1E47CA000B8240 /* parkingPass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3CA85D1A1E47CA000B8240 /* parkingPass.m */; };
+		3F3CA8631A1E4893000B8240 /* JsonSerializerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3CA8601A1E4893000B8240 /* JsonSerializerUtils.m */; };
+		3F3CA8641A1E4893000B8240 /* errorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3CA8621A1E4893000B8240 /* errorObject.m */; };
 		3FE41D551A1E418E0093E82D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE41D541A1E418E0093E82D /* main.m */; };
 		3FE41D581A1E418E0093E82D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE41D571A1E418E0093E82D /* AppDelegate.m */; };
 		3FE41D5B1A1E418E0093E82D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE41D5A1A1E418E0093E82D /* ViewController.m */; };
@@ -27,6 +32,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F3CA8561A1E4562000B8240 /* httpRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = httpRequestHandler.h; sourceTree = "<group>"; };
+		3F3CA8571A1E4562000B8240 /* httpRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = httpRequestHandler.m; sourceTree = "<group>"; };
+		3F3CA8581A1E4562000B8240 /* ParkingPassHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingPassHandler.h; sourceTree = "<group>"; };
+		3F3CA8591A1E4562000B8240 /* ParkingPassHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingPassHandler.m; sourceTree = "<group>"; };
+		3F3CA85C1A1E47CA000B8240 /* parkingPass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parkingPass.h; sourceTree = "<group>"; };
+		3F3CA85D1A1E47CA000B8240 /* parkingPass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = parkingPass.m; sourceTree = "<group>"; };
+		3F3CA85F1A1E4893000B8240 /* JsonSerializerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonSerializerUtils.h; sourceTree = "<group>"; };
+		3F3CA8601A1E4893000B8240 /* JsonSerializerUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonSerializerUtils.m; sourceTree = "<group>"; };
+		3F3CA8611A1E4893000B8240 /* errorObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errorObject.h; sourceTree = "<group>"; };
+		3F3CA8621A1E4893000B8240 /* errorObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = errorObject.m; sourceTree = "<group>"; };
 		3FE41D4F1A1E418E0093E82D /* fpp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fpp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE41D531A1E418E0093E82D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FE41D541A1E418E0093E82D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,8 +98,18 @@
 			children = (
 				3FE41D561A1E418E0093E82D /* AppDelegate.h */,
 				3FE41D571A1E418E0093E82D /* AppDelegate.m */,
+				3F3CA8561A1E4562000B8240 /* httpRequestHandler.h */,
+				3F3CA8571A1E4562000B8240 /* httpRequestHandler.m */,
+				3F3CA8581A1E4562000B8240 /* ParkingPassHandler.h */,
+				3F3CA8591A1E4562000B8240 /* ParkingPassHandler.m */,
 				3FE41D591A1E418E0093E82D /* ViewController.h */,
 				3FE41D5A1A1E418E0093E82D /* ViewController.m */,
+				3F3CA85C1A1E47CA000B8240 /* parkingPass.h */,
+				3F3CA85D1A1E47CA000B8240 /* parkingPass.m */,
+				3F3CA85F1A1E4893000B8240 /* JsonSerializerUtils.h */,
+				3F3CA8601A1E4893000B8240 /* JsonSerializerUtils.m */,
+				3F3CA8611A1E4893000B8240 /* errorObject.h */,
+				3F3CA8621A1E4893000B8240 /* errorObject.m */,
 				3FE41D5C1A1E418E0093E82D /* Main.storyboard */,
 				3FE41D5F1A1E418E0093E82D /* Images.xcassets */,
 				3FE41D611A1E418E0093E82D /* LaunchScreen.xib */,
@@ -220,8 +245,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FE41D5B1A1E418E0093E82D /* ViewController.m in Sources */,
+				3F3CA8641A1E4893000B8240 /* errorObject.m in Sources */,
+				3F3CA8631A1E4893000B8240 /* JsonSerializerUtils.m in Sources */,
 				3FE41D581A1E418E0093E82D /* AppDelegate.m in Sources */,
+				3F3CA85A1A1E4562000B8240 /* httpRequestHandler.m in Sources */,
+				3F3CA85E1A1E47CA000B8240 /* parkingPass.m in Sources */,
 				3FE41D551A1E418E0093E82D /* main.m in Sources */,
+				3F3CA85B1A1E4562000B8240 /* ParkingPassHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +444,7 @@
 				3FE41D741A1E418E0093E82D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FE41D751A1E418E0093E82D /* Build configuration list for PBXNativeTarget "fppTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +453,7 @@
 				3FE41D771A1E418E0093E82D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
