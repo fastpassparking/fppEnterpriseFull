@@ -20,7 +20,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     resultsMsg.hidden = YES;
-
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                          action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -62,6 +66,11 @@
     }];
     
 
+}
+
+// Hide keyboard
+- (IBAction)dismissKeyboard{
+    [licensePlate resignFirstResponder];
 }
 
 
