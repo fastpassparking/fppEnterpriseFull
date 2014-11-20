@@ -7,6 +7,7 @@
 //
 
 #import "parkingPass.h"
+#import "JsonSerializerUtils.h"
 
 @implementation parkingPass
 
@@ -17,8 +18,8 @@
         self.vehicleId = [jsonObject valueForKey:@"vehicleId"];
         self.parkingLotId = [jsonObject valueForKey:@"parkingLotId"];
         self.parkingLotName = [jsonObject valueForKey:@"parkingLotName"];
-        self.startDateTime = [jsonObject valueForKey:@"startDateTime"];
-        self.endDateTime = [jsonObject valueForKey:@"endDateTime"];
+        self.startDateTime = [JsonSerializerUtils getDateFromString:[(NSDictionary*)jsonObject objectForKey:@"startDateTime"]];
+        self.endDateTime = [JsonSerializerUtils getDateFromString:[(NSDictionary*)jsonObject objectForKey:@"endDateTime"]];
         
         // TODO: Properly parse this array of parking payments objects
         self.parkingPayments = [jsonObject valueForKey:@"parkingPayments"];

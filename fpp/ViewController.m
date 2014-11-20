@@ -32,19 +32,19 @@
     NSDate *currentDate = [NSDate date];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     
-    formatter.dateFormat = @"M/d/yyyy hh:ss a";
+    formatter.dateFormat = @"MMM d, hh:ss a";
     
     // Hide the error message, if not already.
     resultsMsg.hidden = YES;
     
     // TODO : Search for plate and update info.
-    [ParkingPassHandler getParkingPassByLicensePlate:licensePlate.text withLotId:@"5677856576547" withCompletionHandler:^(BOOL success, parkingPass* returnedParkingPass) {
+    [ParkingPassHandler getParkingPassByLicensePlate:licensePlate.text withLotId:@"5463f4eedfed56e755d24e25" withCompletionHandler:^(BOOL success, parkingPass* returnedParkingPass) {
         
         dispatch_async(dispatch_get_main_queue(), ^{
             expirationMsg.text = @"";
             
             if(success == YES) {
-                if (returnedParkingPass)
+                if (returnedParkingPass && returnedParkingPass.endDateTime)
                 {
                     if ([currentDate compare: returnedParkingPass.endDateTime] == NSOrderedDescending) {
                         expirationMsg.text = [NSString stringWithFormat:@"Parking pass expired at %@", [formatter stringFromDate:returnedParkingPass.endDateTime]];

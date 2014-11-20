@@ -25,9 +25,7 @@
             NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse*)response;
             if(httpResponse.statusCode == 200) {
                 
-                NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
-                // Parse the vehicles from json data
-                pass = [pass initWithJson:dict];
+                pass = [[parkingPass alloc] initWithJson:[NSJSONSerialization JSONObjectWithData:data options:0 error:NULL]];
                 
                 // Set the completionHandler response
                 wasSuccessful = YES;
