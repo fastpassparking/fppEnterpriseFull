@@ -42,7 +42,7 @@
     resultsMsg.hidden = YES;
     
     // TODO : Search for plate and update info.
-    [ParkingPassHandler getParkingPassByLicensePlate:licensePlate.text withLotId:@"546f878d09c6115461a56e2a" withCompletionHandler:^(BOOL success, parkingPass* returnedParkingPass) {
+    [ParkingPassHandler getParkingPassByLicensePlate:licensePlate.text withLotId:@"546f897909c6115461a56e38" withCompletionHandler:^(BOOL success, parkingPass* returnedParkingPass) {
         
         dispatch_async(dispatch_get_main_queue(), ^{
             expirationMsg.text = @"";
